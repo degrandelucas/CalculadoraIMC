@@ -1,0 +1,32 @@
+@media all and (max-width: 47.50em) {
+  html {
+    /* font-size: 8px; */
+    font-size: 50%;
+  }
+
+  body{
+    margin: 1.5rem;
+    top: 0;
+  }
+
+  #tituloPagina{
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 2rem;
+    text-shadow: rgb(87, 2, 2) 0.1rem 0 1rem;
+  }
+
+  p{
+    align-items: center;
+    font-size: 3rem;
+  }
+
+  /* Campo chute */
+#campoNumeroChute{
+    width: 20%;
+    }
+}
+
+.button{
+  font-size: 1.5rem;
+}

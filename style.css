@@ -1,0 +1,79 @@
+html {
+    /* font-size: 10px; */
+    font-size: 62.5%;
+  }
+  
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    text-align: center;
+    background-image: url(fundo_img_saudavel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat, "Open Sans", Roboto, Verdana, Tahoma, sans-serif;
+    font-size: 1.728rem;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden; /* impede que a tela fique com scroll */
+}
+
+
+#tituloPagina{
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 2rem;
+    text-shadow: rgb(190, 218, 35) 0.1rem 0 1rem;
+}
+
+p{
+    font-size: 3rem;
+    margin: 2rem;
+    text-shadow: rgb(190, 218, 35) 0.1rem 0 1rem;
+}
+
+/* Estilo base para todos os botões */
+.button {
+    border-radius: 0.8rem;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 12rem;
+}
+
+/* Estilo específico para o botão "Chute" */
+.button-chute {
+    background-color: #007BFF; 
+    color: #FFFFFF; 
+    border: none;
+    margin-left: 2rem;
+}
+
+.button-chute:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo específico para o botão "Zerar" */
+.button-reset {
+    background-color: #bbcf94; 
+    color: #4A4A4A; 
+    border: 1px solid #CCCCCC;
+}
+
+.button-reset:hover {
+    background-color: #e1e7ed; 
+}
+
+.container{
+    display: flex;
+    align-items: column;
+    flex-flow: column wrap;
+}
