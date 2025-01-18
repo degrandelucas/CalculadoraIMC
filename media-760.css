@@ -4,29 +4,29 @@
     font-size: 50%;
   }
 
-  body{
+  body {
     margin: 1.5rem;
     top: 0;
   }
 
-  #tituloPagina{
+  #tituloPagina {
     font-size: 4rem;
     font-weight: bold;
     margin: 2rem;
     text-shadow: rgb(190, 218, 35) 0.1rem 0 1rem;
   }
 
-  p{
+  p {
     align-items: center;
     font-size: 3rem;
   }
 
-  /* Campo chute */
-#campoNumeroChute{
-    width: 20%;
-    }
-}
+  .button {
+    font-size: 1.5rem;
+  }
 
-.button{
-  font-size: 1.5rem;
+  table {
+    font-size: 1.4rem;
+  }
+
 }
