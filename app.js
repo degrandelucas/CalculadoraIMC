@@ -1,10 +1,13 @@
-let IMC = consultarIMC();
-
-function buscarValorHTML(tag){
-    document.getElementById(tag).value;
+function exibirTextoNaTela(tag, texto){
+    let campoTexto = document.getElementById(tag);
+    campoTexto.innerHTML = texto;
 }
 
-function consultarIMC() 
+function buscarValorHTML(tag){
+    return document.getElementById(tag).value;
+}
+
+function calculoIMC() 
 {
     let peso = buscarValorHTML('peso');
     let altura = buscarValorHTML('altura');
@@ -12,10 +15,16 @@ function consultarIMC()
     return imc;
 }
 
-function exibirTextoNaTela(tag, texto){
-    let campoTexto = document.getElementById(tag);
-    campoTexto.innerHTML = texto;
+function informarIMC(){
+    let IMC = calculoIMC();
+    let texto = 'Seu IMC é: ' + IMC.toFixed(2);
+    exibirTextoNaTela('resultado', texto);
 }
 
 exibirTextoNaTela('tituloPagina', 'Calculadora de IMC');
-exibirTextoNaTela('resposta', 'IMC: ' + IMC);
+
+function limparCampos(){
+    document.getElementById('peso').value = '';
+    document.getElementById('altura').value = '';
+    document.getElementById('resultado').innerHTML = '';
+}
