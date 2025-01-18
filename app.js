@@ -9,15 +9,15 @@ function buscarValorHTML(tag){
 
 function calculoIMC() 
 {
-    let peso = buscarValorHTML('peso');
-    let altura = buscarValorHTML('altura');
+    let peso = parseFloat(buscarValorHTML('peso').replace(',', '.'));
+    let altura = parseFloat(buscarValorHTML('altura').replace(',', '.'));
     let imc = peso / (altura * altura);
     return imc;
 }
 
 function informarIMC(){
     let IMC = calculoIMC();
-    let texto = 'Seu IMC é: ' + IMC.toFixed(2);
+    let texto = IMC.toFixed(2);
     exibirTextoNaTela('resultado', texto);
 }
 
