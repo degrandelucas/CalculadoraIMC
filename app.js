@@ -1,14 +1,14 @@
 let IMC = consultarIMC();
 
-function buscarParametroHTML(tag){
+function buscarValorHTML(tag){
     document.getElementById(tag).value;
 }
 
-function consultarIMC(parametroPeso, parametroAltura) 
+function consultarIMC() 
 {
-    let peso = buscarParametroHTML('peso');
-    let altura = buscarParametroHTML('altura');
-    let imc = parametroPeso / (parametroAltura * parametroAltura);
+    let peso = buscarValorHTML('peso');
+    let altura = buscarValorHTML('altura');
+    let imc = peso / (altura * altura);
     return imc;
 }
 
