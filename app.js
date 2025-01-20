@@ -28,3 +28,9 @@ function limparCampos(){
     document.getElementById('altura').value = '';
     document.getElementById('resultado').innerHTML = '';
 }
+
+function menorEMaiorPesoIdeal(){
+    let IMC = calculoIMC();
+    let menorMaiorPeso = IMC.toFixed(2) + '  ';
+    exibirTextoNaTela('menorEMaiorPesoIdeal', menorMaiorPeso);
+}

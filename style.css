@@ -76,11 +76,16 @@ p{
     flex-flow: column wrap;
 }
 
+.container-resultado{
+    display: flex;
+    justify-content: center;
+}
+
 table {
     align-self: center;
     width: 80%;
     border-collapse: collapse;
-    margin: 2rem 0;
+    margin: 2rem auto;
     font-size: 1rem;
     text-align: center;
     font-size: 1.6rem;

@@ -25,13 +25,17 @@
     <br>
     
     <div class="container-botoes">
-        <button class="button button-chute" onclick="informarIMC()">Consultar</button>
+        <button class="button button-chute" onclick="informarIMC(), menorPesoIdeal(), maiorPesoIdeal()">Consultar</button>
         <button class="button button-reset" onclick="limparCampos()">Limpar</button>
     </div>
     
     <div class="container-resultado">
-        <p>IMC: </p>
+        <p>IMC:</p>
         <p id="resultado"></p>
+    </div>
+    <div class="container-resultado pesoIdeal">
+        <p>Peso ideal entre:</p>
+        <p id="menorEMaiorPesoIdeal"></p>
     </div>
     
     <table>
