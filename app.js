@@ -27,10 +27,19 @@ function limparCampos(){
     document.getElementById('peso').value = '';
     document.getElementById('altura').value = '';
     document.getElementById('resultado').innerHTML = '';
+    document.getElementById('menorPesoIdeal').innerHTML = '';
+    document.getElementById('maiorPesoIdeal').innerHTML = '';
+
 }
 
-function menorEMaiorPesoIdeal(){
-    let IMC = calculoIMC();
-    let menorMaiorPeso = IMC.toFixed(2) + '  ';
-    exibirTextoNaTela('menorEMaiorPesoIdeal', menorMaiorPeso);
+function menorPesoIdeal(){
+    let altura = parseFloat(buscarValorHTML('altura').replace(',', '.'));
+    let menorPeso = (18.5 * (altura * altura)).toFixed(1).replace('.', ',');
+    exibirTextoNaTela('menorPesoIdeal', menorPeso);
+}
+
+function maiorPesoIdeal(){
+    let altura = parseFloat(buscarValorHTML('altura').replace(',', '.'));
+    let maiorPeso = (24.9 * (altura * altura)).toFixed(1).replace('.', ',');
+    exibirTextoNaTela('maiorPesoIdeal', maiorPeso);
 }
