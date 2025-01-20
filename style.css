@@ -140,3 +140,8 @@ legend {
     font-size: 1.5rem;
     margin-top: -1rem;
 }
+
+.highlight {
+    background-color: #ffdd57; /* Cor de destaque */
+    font-weight: bold;
+}
