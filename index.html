@@ -19,8 +19,12 @@
 </head>
 <body>
     <h1 id="tituloPagina"></h1>
-    <label for="peso">Peso (kg)</label> <input type="number" id="peso" name="peso" placeholder="Exemplo: 65,4" />
-    <label for="peso">Altura (m)</label> <input type="number" id="altura" name="altura" placeholder="Exemplo: 1,75" />
+    <div class="container-formulario">
+        <label for="peso">Peso (kg)</label>
+        <input type="number" id="peso" name="peso" placeholder="Exemplo: 65,4" />
+        <label for="peso">Altura (m)</label>
+        <input type="number" id="altura" name="altura" placeholder="Exemplo: 1,75" />
+    </div>
     
     <br>
     
@@ -33,11 +37,13 @@
         <p>IMC:</p>
         <p id="resultado"></p>
     </div>
-    <div class="container-resultado pesoIdeal">
+    <div class="container-sugestaoPesoIdeal">
         <p>Peso ideal entre (kg):</p>
-        <p id="menorPesoIdeal"></p>
-        <p> - </p>
-        <p id="maiorPesoIdeal"></p>
+        <div class="container-pesoIdeal">
+            <p id="menorPesoIdeal"></p>
+            <p>-</p>
+            <p id="maiorPesoIdeal"></p>
+        </div>
     </div>
     
     <table>

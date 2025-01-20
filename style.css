@@ -36,6 +36,24 @@ p{
     text-shadow: rgb(190, 218, 35) 0.1rem 0 1rem;
 }
 
+.container-formulario{
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+}
+
+label{
+    margin-left: 1rem;
+}
+
+input{
+    font-size: 1.6rem;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    border: 0.1rem solid #494141;
+    font-weight: bold;
+}
+
 /* Estilo base para todos os botões */
 .button {
     border-radius: 0.8rem;
@@ -77,8 +95,20 @@ p{
 }
 
 .container-resultado{
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
+}
+
+.container-sugestaoPesoIdeal{
+    display: block;
+    justify-content: center;
+}
+
+.container-pesoIdeal{
+    display: flex;
+    justify-content: center;
+    margin-top: -4rem;
 }
 
 table {
