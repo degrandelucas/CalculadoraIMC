@@ -1,25 +1,25 @@
-# Projeto de Estudo - Jogo do Número Secreto
+# Projeto de Estudo - Calculadora de IMC
 
-Este projeto é um jogo interativo desenvolvido em **HTML**, **CSS** e **JavaScript**, no qual o jogador deve adivinhar um número secreto gerado aleatoriamente. Ele explora conceitos de manipulação de DOM, lógica de programação e design responsivo.
+Este projeto é uma **calculadora interativa de IMC (Índice de Massa Corporal)**, desenvolvida em **HTML**, **CSS** e **JavaScript**, com o objetivo de fornecer uma experiência prática sobre manipulação de DOM, lógica de programação e design responsivo.
 
 ---
 
 ## Funcionalidades Principais
 
-1. **Gerar um Número Secreto:**
-   - O sistema gera aleatoriamente um número secreto entre 1 e 100 ao iniciar o jogo.
+1. **Cálculo do IMC:**
+   - O sistema calcula o IMC com base no peso e altura informados pelo usuário.
 
-2. **Entrada e Verificação do Número:**
-   - O jogador insere um número no campo de entrada e recebe feedback se o número é maior, menor ou igual ao número secreto.
+2. **Exibição da Classificação:**
+   - O IMC calculado é comparado a uma tabela de classificação, destacando em qual intervalo o usuário se encontra.
 
-3. **Controle de Tentativas:**
-   - O sistema rastreia o número de tentativas realizadas e apresenta esta informação ao jogador.
+3. **Sugestão de Peso Ideal:**
+   - A calculadora exibe a faixa de peso ideal para o usuário, de acordo com sua altura.
 
-4. **Reiniciar o Jogo:**
-   - O jogador pode reiniciar o jogo clicando no botão "Novo Jogo", que redefine o número secreto e o contador de tentativas.
+4. **Limpeza de Campos:**
+   - Os campos preenchidos podem ser limpos rapidamente com o botão "Limpar".
 
 5. **Design Responsivo:**
-   - Interface ajustável para diferentes tamanhos de tela, garantindo boa experiência de uso em dispositivos móveis.
+   - Interface otimizada para diferentes tamanhos de tela, garantindo uma experiência agradável em dispositivos móveis.
 
 ---
 
@@ -28,45 +28,47 @@ Este projeto é um jogo interativo desenvolvido em **HTML**, **CSS** e **JavaScr
 ### Arquivos e Suas Responsabilidades
 
 - **`index.html`**
-    - Estrutura do jogo, incluindo os campos de entrada, botões e mensagens de feedback.
+    - Estrutura principal da aplicação, com campos de entrada, botões e tabela de classificações.
 
 - **`style.css`**
-    - Estilos gerais do jogo, como cores, fontes e layout.
-    - Inclui um design responsivo para dispositivos móveis.
+    - Estilização geral do projeto, incluindo paleta de cores, fontes e layout responsivo.
 
 - **`media-760.css`**
-    - Estilos específicos para telas com largura de até 760px.
+    - Estilos adicionais para dispositivos móveis com largura de até 760px.
 
 - **`app.js`**
-    - Lógica principal do jogo, incluindo:
-        - Geração do número secreto.
-        - Verificação do número inserido.
-        - Atualização dinâmica das mensagens exibidas ao jogador.
-        - Reinicialização do jogo.
+    - Lógica da aplicação, como:
+        - Cálculo do IMC.
+        - Atualização dinâmica das informações exibidas.
+        - Destaque na tabela de classificações.
+        - Limpeza de campos e reinicialização de dados.
 
 ---
 
 ## Como Executar o Projeto
 
-1. **Clone o repositório.**
+1. **Clone o repositório ou faça o download do projeto.**
 
-2. **Abra o arquivo `index.html` no navegador.**
+2. **Abra o arquivo `index.html` em um navegador.**
 
-3. **Jogue o jogo.**
-   - Insira um número no campo de entrada.
-   - Clique no botão "Chutar" para verificar se acertou.
-   - Reinicie o jogo clicando no botão "Novo Jogo" sempre que desejar.
+3. **Utilize a calculadora:**
+   - Insira o peso e a altura nos campos indicados.
+   - Clique no botão "Consultar" para visualizar o resultado.
+   - Use o botão "Limpar" para redefinir os campos e resultados.
 
 ---
 
 ## Tecnologias Utilizadas
 
-- **HTML5:** Estruturação do conteúdo do jogo.
+- **HTML5:** Estruturação do conteúdo da página.
 - **CSS3:** Estilização e design responsivo.
-- **JavaScript (ES6):** Lógica do jogo e manipulação do DOM.
+- **JavaScript (ES6):** Lógica e interatividade da calculadora.
 
 ---
 
 ## Autor
-
 Lucas Degrande
+
+---
+## Página
+https://degrandelucas.github.io/CalculadoraIMC/
