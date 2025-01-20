@@ -22,14 +22,14 @@
     <div class="container-formulario">
         <label for="peso">Peso (kg)</label>
         <input type="number" id="peso" name="peso" placeholder="Exemplo: 65,4" />
-        <label for="peso">Altura (m)</label>
+        <label for="altura">Altura (m)</label>
         <input type="number" id="altura" name="altura" placeholder="Exemplo: 1,75" />
     </div>
     
     <br>
     
     <div class="container-botoes">
-        <button class="button button-chute" onclick="informarIMC(), menorPesoIdeal(), maiorPesoIdeal(), destacarLinhaTabela()">Consultar</button>
+        <button class="button button-consulta" onclick="informarIMC(), menorPesoIdeal(), maiorPesoIdeal(), destacarLinhaTabela()">Consultar</button>
         <button class="button button-reset" onclick="limparCampos()">Limpar</button>
     </div>
     
@@ -82,6 +82,23 @@
         </tbody>
     </table>
     <legend>*Mostra em destaque o intervalo atual que o usuário se encontra</legend>
+
+    <h2 id="SelecionaImcDesejado"></h2>
+    <div class="container-formulario">
+        <label for="imcDesejado">IMC</label>
+        <input type="number" id="imcDesejado" name="imcDesejado" placeholder="Exemplo: 20 ou 21,5" />
+        <label for="alturaImcDesejado">Altura (m)</label>
+        <input type="number" id="alturaImcDesejado" name="alturaImcDesejado" placeholder="Exemplo: 1,75" />
+    </div>
+    <div class="container-resultado">
+        <p>Peso (Kg):</p>
+        <p id="pesoPeloImcDesejado"></p>
+    </div>
+    <div class="container-botoes">
+        <button class="button button-consulta" onclick="pesoIdealAtravesDoIMC()">Consultar</button>
+        <button class="button button-reset" onclick="limparCamposPesoAtravesDoIMC()">Limpar</button>
+    </div>
+    <br>    
     <script src="app.js"></script>
 </body>
 </html>

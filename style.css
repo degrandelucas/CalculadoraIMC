@@ -65,15 +65,15 @@ input{
     width: 12rem;
 }
 
-/* Estilo específico para o botão "Chute" */
-.button-chute {
+/* Estilo específico para o botão "consulta" */
+.button-consulta {
     background-color: #007BFF; 
     color: #FFFFFF; 
     border: none;
     margin-left: 2rem;
 }
 
-.button-chute:hover {
+.button-consulta:hover {
     background-color: #0056b3;
 }
 
@@ -144,4 +144,12 @@ legend {
 .highlight {
     background-color: #ffdd57; /* Cor de destaque */
     font-weight: bold;
+}
+
+#SelecionaImcDesejado{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 2rem;
+    margin-top: 5rem;
+    text-shadow: rgb(190, 218, 35) 0.1rem 0 1rem;
 }

@@ -68,3 +68,18 @@ function destacarLinhaTabela() {
         linhas[5].classList.add('highlight');
     }
 }
+
+exibirTextoNaTela('SelecionaImcDesejado', 'Deseja um IMC específico?');
+
+function pesoIdealAtravesDoIMC() {
+    let imcDesejado = parseFloat(buscarValorHTML('imcDesejado').replace(',', '.'));
+    let alturaContainerImcDesejado = parseFloat(buscarValorHTML('alturaImcDesejado').replace(',', '.'));
+    let pesoAtravesDoIMC = (imcDesejado * (alturaContainerImcDesejado * alturaContainerImcDesejado)).toFixed(1).replace('.', ',');
+    exibirTextoNaTela('pesoPeloImcDesejado', pesoAtravesDoIMC);
+}
+
+function limparCamposPesoAtravesDoIMC() {
+    document.getElementById('imcDesejado').value = '';
+    document.getElementById('alturaImcDesejado').value = '';
+    document.getElementById('pesoPeloImcDesejado').innerHTML = '';
+}
