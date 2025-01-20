@@ -1,4 +1,4 @@
-# Projeto de Estudo - Calculadora de IMC
+# Projeto - Calculadora de IMC
 
 Este projeto é uma **calculadora interativa de IMC (Índice de Massa Corporal)**, desenvolvida em **HTML**, **CSS** e **JavaScript**, com o objetivo de fornecer uma experiência prática sobre manipulação de DOM, lógica de programação e design responsivo.
 
